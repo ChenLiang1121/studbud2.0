@@ -1,0 +1,19 @@
+{
+  "name": "studbud2.0",
+  "version": "1.0.0",
+  "description": "Web application for studying",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChenLiang1121/studbud2.0.git"
+  },
+  "author": "\"Chen Liang\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChenLiang1121/studbud2.0/issues"
+  },
+  "homepage": "https://github.com/ChenLiang1121/studbud2.0#readme"
+}
