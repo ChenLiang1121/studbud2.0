@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Web application for studying",
   "main": "server.js",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "parcel build ./public/index.html",
@@ -20,9 +19,13 @@
   },
   "homepage": "https://github.com/ChenLiang1121/studbud2.0#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "sass": "^1.51.0"
   },
   "devDependencies": {
-    "parcel": "^2.0.0-rc.0"
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "autoprefixer": "^10.4.4",
+    "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.4.12"
   }
 }

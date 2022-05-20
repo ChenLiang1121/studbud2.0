@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>repl.it</title>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <meta name="description" content="" />
+
+  <!-- <link rel="icon" href="img/favicon.png"> -->
+
+  <link rel="stylesheet" href="scss/main.scss">
+
+</head>
+
+<body class="app-container">
+  
+  <!-- The navigation bar on all pages -->
+  <nav class="vertical nav bar">
+    <ul class="nav-links">
+    <li class="nav-icon"><a href="index.html" class="active">Home</a></li>
+    <li class="nav-icon"><a href="tasklist.html">Tasks</a></li>
+    <li class="nav-icon"><a href="kanban.html">Kanban board</a></li>
+    <li class="nav-icon"><a href="timer.html">Timer</a></li>
+    <li class="nav-icon"><a href="dictionary.html">Dictionary</a></li>
+    <li class="nav-icon"><a href="reference.html">Reference</a></li>
+    </ul>
+  </nav>
+
+  <!-- Task page contents-->
+  <div id="taskpage" class="page-container">
+    <h1>Add your tasks</h1>
+
+    <div id="task-grid">
+        <form id ="taskform">
+      
+          <!-- Task input -->
+          <label for="task">Task: </label>
+          <input type="text" name="task" id="taskInput" required>
+      
+          <!-- Date input -->
+          <label for="dueDate">Due date: </label>
+          <input type="date" name="dueDate" id="dueDateInput" required>
+      
+          <!-- Time input -->
+          <label for="estimatedTime">Estimated completion time: </label>
+          <input type="time" name="estimatedTime" id="estimatedTimeInput">
+      
+          <!-- Priority -->
+          <label for="priority">Task priority: </label>
+          <select name="priority" id="priorityInput">
+            <option value="">Select one</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+      
+          <!-- Status -->
+          <label for="completionStatus">Completion status: </label>
+          <select name="status" id="statusInput">
+            <option value="">Select one</option>
+            <option value="Done">Done</option>
+            <option value="Not Done">Not Done</option>
+          </select>
+      
+          <!-- Time input-->
+          <label for="completionTime">Actual completion time: </label>
+          <input type="time" name="completionTime" id="completionTimeInput">
+      
+          <br>
+      
+          <input type="submit" value="submit">
+        </form>
+      
+        <div id="tasklist">
+          <p id="emptyList">No tasks yet</p>
+          <ul></ul>
+        </div>
+      </div>
+
+      <script type="module" src="script.js">
+    </script>
+    </body>
+
+</html>
