@@ -1,5 +1,7 @@
 import KanbanAPI from "../KanbanAPI/KanbanAPI.js";
 
+// Set the drag interaction of input dropzone, keep the input same
+
 export default class DropZone {
 	static createDropZone() {
 		const range = document.createRange();

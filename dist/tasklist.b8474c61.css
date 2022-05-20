@@ -1,0 +1,71 @@
+.app-container {
+  background-color: #98D7E4;
+  padding-left: 50px;
+}
+
+.page-container {
+  margin: 4em;
+}
+.page-container#home {
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  background-color: #FDFAB4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+nav .nav-links .nav-icon a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 1em 2em;
+}
+nav .nav-links .nav-icon a:hover {
+  color: rgb(235, 101, 130);
+}
+
+nav.vertical {
+  width: 120px;
+  height: 100vh;
+  flex-direction: row;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+nav.vertical .nav-links {
+  flex-direction: column;
+}
+nav.vertical .nav-links .nav-item a {
+  display: block;
+  padding: 4em 0;
+}
+
+#task-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "taskform tasklist";
+}
+
+#taskform {
+  grid-area: taskform;
+  max-width: 300px;
+  margin: 0 auto;
+}
+#taskform label {
+  display: block;
+  width: 100%;
+}
+
+#tasklist {
+  grid-area: tasklist;
+}
+/*# sourceMappingURL=tasklist.b8474c61.css.map */

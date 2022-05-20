@@ -1,4 +1,74 @@
-@import 'layout.scss';
-@import 'components/navigation.scss';
-@import 'components/tasklist.scss';
-@import 'components/kanban.scss';
+
+/* The whole page shared element */
+
+.app-container {
+    background-color: rgba(152, 215, 228, 0.6);
+    padding-left: 50px;
+}
+
+.page-container {
+    margin: 4em;
+    &#home {
+        text-align: center;
+    }
+}
+
+/* All pages shared the same style of nav bar */
+
+nav {
+    width: 100%;
+    background-color: rgba(253, 250, 180, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav-links {
+        list-style: none;
+        display: flex;
+        .nav-icon a {
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding: 1em;
+            margin-right: 2em;
+            &:hover {
+                color: rgb(235, 101, 130);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+nav.vertical {
+    width: 150px;
+    height: 100vh;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .nav-links {
+        flex-direction: column;
+        .nav-item a {
+            display: block;
+            padding: 4em 0;
+            
+        }
+    }
+
+}
+
+/* Content style */
+
+h1 {
+    margin-top: 150px;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:rgb(44, 43, 43);
+}
+
+p {
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(44, 43, 43);
+}

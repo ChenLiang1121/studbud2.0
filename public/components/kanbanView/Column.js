@@ -2,6 +2,8 @@ import KanbanAPI from "../KanbanAPI/KanbanAPI";
 import DropZone from "./DropZone.js";
 import Item from "./Item.js";
 
+// Create column elements
+
 export default class Column {
 	constructor(id, title) {
 		const topDropZone = DropZone.createDropZone();

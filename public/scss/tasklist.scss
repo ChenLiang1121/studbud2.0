@@ -1,0 +1,106 @@
+
+/* The whole page shared element */
+
+.app-container {
+    background-color: rgba(152, 215, 228, 0.6);
+    padding-left: 50px;
+}
+
+.page-container {
+    margin: 4em;
+}
+
+/* All pages shared the same style of nav bar */
+
+nav {
+    width: 100%;
+    background-color: rgba(253, 250, 180, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav-links {
+        list-style: none;
+        display: flex;
+        .nav-icon a {
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding: 1em;
+            margin-right: 2em;
+            &:hover {
+                color: rgb(235, 101, 130);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+nav.vertical {
+    width: 150px;
+    height: 100vh;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .nav-links {
+        flex-direction: column;
+        .nav-item a {
+            display: block;
+            padding: 4em 0;
+            
+        }
+    }
+
+}
+
+/* title and subtitle element style */
+
+#title {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:rgb(44, 43, 43);
+    margin: auto;
+    margin-top: 50px;
+	width: 1050px;
+	display: flex;
+	border-radius: 5px;
+}
+
+#subtitle {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(44, 43, 43);
+    margin: auto;
+	width: 1050px;
+	display: flex;
+
+}
+
+/* task generator and list style and layout */
+
+#task-grid {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "taskform tasklist";
+}
+
+#taskform {
+    grid-area: taskform;
+    max-width: 300px;
+    margin: auto;
+    padding-left: 180px;
+
+    label{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 300px;
+    }
+}
+
+#tasklist {
+    grid-area: tasklist;
+}

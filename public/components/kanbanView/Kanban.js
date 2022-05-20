@@ -1,5 +1,7 @@
 import Column from "./Column.js";
 
+// Set the column elements as kanban board
+
 export default class Kanban {
 	constructor(root) {
 		this.root = root;

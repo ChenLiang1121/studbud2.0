@@ -1,9 +1,56 @@
+.app-container {
+  background-color: #98D7E4;
+  padding-left: 50px;
+}
+
+nav {
+  width: 100%;
+  background-color: #FDFAB4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+nav .nav-links .nav-icon a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 1em 2em;
+}
+nav .nav-links .nav-icon a:hover {
+  color: rgb(235, 101, 130);
+}
+
+nav.vertical {
+  width: 120px;
+  height: 100vh;
+  flex-direction: row;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+nav.vertical .nav-links {
+  flex-direction: column;
+}
+nav.vertical .nav-links .nav-item a {
+  display: block;
+  padding: 4em 0;
+}
+
 .kanban {
+  margin: 4em;
   display: flex;
   padding: 30px;
   width: 750px;
   background: #009578;
   border-radius: 5px;
+}
+.kanban#home {
+  text-align: center;
 }
 
 .kanban * {

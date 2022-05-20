@@ -1,4 +1,10 @@
+
+// Be able to be imported into other files
+
 export default class KanbanAPI {
+
+	// Get the input data
+
 	static getItems(columnId) {
 		const column = read().find(column => column.id == columnId);
 
@@ -8,6 +14,8 @@ export default class KanbanAPI {
 
 		return column.items;
 	}
+
+	// Get new id item
 
 	static insertItem(columnId, content) {
 		const data = read();
@@ -26,6 +34,8 @@ export default class KanbanAPI {
 
 		return item;
 	}
+
+	// Read the updated information of item, changing the column
 
 	static updateItem(itemId, newProps) {
 		const data = read();
@@ -46,6 +56,7 @@ export default class KanbanAPI {
 		item.content = newProps.content === undefined ? item.content : newProps.content;
 
 		// Update column and position
+
 		if (
 			newProps.columnId !== undefined
 			&& newProps.position !== undefined
@@ -57,9 +68,11 @@ export default class KanbanAPI {
 			}
 
 			// Delete the item from it's current column
+
 			currentColumn.items.splice(currentColumn.items.indexOf(item), 1);
 
 			// Move item into it's new column and position
+
 			targetColumn.items.splice(newProps.position, 0, item);
 		}
 
@@ -80,6 +93,8 @@ export default class KanbanAPI {
 		save(data);
 	}
 }
+
+// Default layout
 
 function read() {
 	const json = localStorage.getItem("kanban-data");
@@ -103,6 +118,8 @@ function read() {
 
 	return JSON.parse(json);
 }
+
+// Local storage save data
 
 function save(data) {
 	localStorage.setItem("kanban-data", JSON.stringify(data));

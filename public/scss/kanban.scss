@@ -1,0 +1,152 @@
+
+/* The whole page shared element */
+
+.app-container {
+    background-color: rgba(152, 215, 228, 0.6);
+}
+
+/* All pages shared the same style of nav bar */
+
+nav {
+    width: 100%;
+    background-color: rgba(253, 250, 180, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav-links {
+        list-style: none;
+        display: flex;
+        .nav-icon a {
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding: 1em;
+            margin-right: 2em;
+            &:hover {
+                color: rgb(235, 101, 130);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+nav.vertical {
+    width: 150px;
+    height: 100vh;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .nav-links {
+        flex-direction: column;
+        .nav-item a {
+            display: block;
+            padding: 4em 0;
+            
+        }
+    }
+
+}
+
+/* title and subtitle element style */
+
+#title {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:rgb(44, 43, 43);
+    margin:auto;
+    margin-top: 50px;
+	width: 1050px;
+	display: flex;
+	border-radius: 5px;
+}
+
+#subtitle {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(44, 43, 43);
+    margin:auto;
+	width: 1050px;
+	display: flex;
+
+}
+
+/* kanban column title, input box, add button style */
+
+.kanban {
+	margin:auto;
+    margin-top: 50px;
+    &#home {
+        text-align: center;
+    }
+	display: flex;
+	padding: 30px;
+	width: 1000px;
+	background: #e7e6e6f6;
+	border-radius: 5px;
+}
+
+.kanban * {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.kanban__column {
+	flex: 1;
+}
+
+.kanban__column:not(:last-child) {
+	margin-right: 30px;
+}
+
+.kanban__column-title {
+	margin-bottom: 10px;
+    text-align: center;
+	font-size: 30px;
+	color: rgb(0, 0, 0);
+	user-select: none;
+}
+
+.kanban__item-input {
+	padding: 10px 15px;
+	box-sizing: border-box;
+	background: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.kanban__dropzone {
+	height: 10px;
+	transition: background 0.15s, height 0.15s;
+}
+
+.kanban__dropzone--active {
+	height: 20px;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.kanban__add-item {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	background: rgb(8, 74, 255);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* instruction style */
+
+#instruction {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(44, 43, 43);
+    margin:auto;
+    margin-top: 20px;
+	padding: 30px;
+	width: 1050px;
+	display: flex;
+	border-radius: 5px;
+}
+

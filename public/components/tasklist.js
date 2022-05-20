@@ -1,4 +1,6 @@
+
 //Basic form DOM elements
+
 const form = document.getElementById("taskform");
 const button = document.querySelector("#taskform > button");
 var taskInput = document.getElementById("taskInput");
@@ -11,7 +13,8 @@ var statusInput = document.getElementById("statusInput");
 var completionTimeInput = document.getElementById("completionTimeInput");
 
 
-// Form submission event listener
+// Create submission event listener
+
 form.addEventListener("submit", function(event) {
     event.preventDefault();
     let task = taskInput.value;
@@ -25,10 +28,12 @@ form.addEventListener("submit", function(event) {
     }
 })
 
-// Create global array to track tasks
+// Create array to track tasks
+
 var taskListArray = [];
 
 // Function to add task with user inputs as parameters
+
 function addTask(taskDescription, dueDate, estimatedTime, priorityRating, completionTime, status) {
     let d = new Date();
     let dateCreated = d.getFullYear();
@@ -47,13 +52,16 @@ function addTask(taskDescription, dueDate, estimatedTime, priorityRating, comple
     renderTask(task);
 }
 
-// Function to display task on screen
+// Display task on screen
+
 function renderTask(task) {
 
     // Call function - checks if a task has been added
+
     updateEmpty();
 
     // Create HTML elements
+
     let item = document.createElement("ul");
     item.setAttribute('data-id', task.id);
     item.innerHTML = "<p>" + task.taskDescription + "</p>";
@@ -61,6 +69,7 @@ function renderTask(task) {
     tasklist.appendChild(item);
 
     // Extra Task DOM elements
+
     let delButton = document.createElement("button");
     let delButtonText = document.createTextNode("Delete Task");
     delButton.appendChild(delButtonText);
@@ -68,6 +77,7 @@ function renderTask(task) {
 
 
     // Event Listeners for DOM elements
+
     delButton.addEventListener("click", function(event) {
         event.preventDefault();
         let id = event.target.parentElement.getAttribute('data-id');
@@ -79,10 +89,12 @@ function renderTask(task) {
     })
 
     // Clear the input form
+
     form.reset();
 }
 
 // Function to remove item from array
+
 function removeItemFromArray(arr, index) {
     if (index > -1) {
         arr.splice(index, 1)
@@ -92,6 +104,7 @@ function removeItemFromArray(arr, index) {
 
 
 // Function to hide the 'you haven't added any tasks' text
+
 function updateEmpty() {
     if (taskListArray.length > 0) {
         document.getElementById('emptyList').style.display = 'none';
