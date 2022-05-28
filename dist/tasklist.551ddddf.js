@@ -529,7 +529,7 @@ function removeItemFromArray(arr, index) {
     if (index > -1) arr.splice(index, 1);
     return arr;
 }
-// Function to hide the 'you haven't added any tasks' text
+// Function to hide the 'No tasks yet' text while tasks exist
 function updateEmpty() {
     if (taskListArray.length > 0) document.getElementById('emptyList').style.display = 'none';
     else document.getElementById('emptyList').style.display = 'block';

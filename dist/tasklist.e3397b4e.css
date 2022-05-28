@@ -74,6 +74,7 @@ nav.vertical .nav-links .nav-item a {
 #task-grid {
   display: grid;
   margin-top: 50px;
+  margin-left: 100px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "taskform tasklist";

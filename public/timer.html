@@ -1,0 +1,58 @@
+
+<!-- Got inspiration and help from "https://youtu.be/PIiMSMz7KzM" for html, scss, and js parts, about how to make a Kanban board on website --> 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>repl.it</title>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <meta name="description" content="" />
+
+  <link rel="stylesheet" href="scss/timer.scss">
+
+  <!-- Use free icon for the buttons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body class="app-container">
+
+    <!-- The navigation bar on all pages -->
+  
+    <nav class="vertical nav bar">
+  
+      <ul class="nav-links">
+      <li class="nav-icon"><a href="index.html" class="active">Home</a></li>
+      <li class="nav-icon"><a href="tasklist.html">Tasks</a></li>
+      <li class="nav-icon"><a href="kanban.html">Kanban board</a></li>
+      <li class="nav-icon"><a href="timer.html">Timer</a></li>
+      <li class="nav-icon"><a href="dictionary.html">Dictionary</a></li>
+      </ul>
+  
+    </nav>
+  
+    <!-- Page contents, title and subtitle introduce the tool, two types of timer, both counting down and counting upwards for different situations and needs -->
+  
+    <div id="title"> Pomodoro timer </div>
+  
+    <div id="subtitle"> (set the section time and countdown) </div>
+  
+    <div class="timer"></div>
+
+    <div id="title"> Stopwatch timer </div>
+  
+    <div id="subtitle"> (counting upwards timer to track time) </div>
+
+
+
+    <script type="module" src="components/timer.js"></script>
+  
+  </body>
+  </html>
