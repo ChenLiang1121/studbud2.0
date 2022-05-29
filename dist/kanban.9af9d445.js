@@ -456,7 +456,7 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"e9OTh":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-// Import all js
+// Import all js, reference: "https://github.com/dcode-youtube/kanban-board"
 var _kanbanJs = require("./kanbanView/Kanban.js");
 var _kanbanJsDefault = parcelHelpers.interopDefault(_kanbanJs);
 new _kanbanJsDefault.default(document.querySelector(".kanban"));
@@ -464,6 +464,7 @@ new _kanbanJsDefault.default(document.querySelector(".kanban"));
 },{"./kanbanView/Kanban.js":"5G8Vf","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc"}],"5G8Vf":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+// Reference: "https://github.com/dcode-youtube/kanban-board"
 var _columnJs = require("./Column.js");
 var _columnJsDefault = parcelHelpers.interopDefault(_columnJs);
 class Kanban {
@@ -496,6 +497,7 @@ exports.default = Kanban;
 },{"./Column.js":"dBXYn","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc"}],"dBXYn":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+// Reference: "https://github.com/dcode-youtube/kanban-board"
 var _kanbanAPI = require("../KanbanAPI/KanbanAPI");
 var _kanbanAPIDefault = parcelHelpers.interopDefault(_kanbanAPI);
 var _dropZoneJs = require("./DropZone.js");
@@ -656,6 +658,7 @@ exports.export = function(dest, destName, get) {
 },{}],"i5tXo":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+// Reference: "https://github.com/dcode-youtube/kanban-board"
 var _kanbanAPIJs = require("../KanbanAPI/KanbanAPI.js");
 var _kanbanAPIJsDefault = parcelHelpers.interopDefault(_kanbanAPIJs);
 class DropZone {
@@ -695,6 +698,7 @@ exports.default = DropZone;
 },{"../KanbanAPI/KanbanAPI.js":"6o9fl","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc"}],"5u84O":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+// Reference: "https://github.com/dcode-youtube/kanban-board"
 var _dropZoneJs = require("./DropZone.js");
 var _dropZoneJsDefault = parcelHelpers.interopDefault(_dropZoneJs);
 var _kanbanAPIJs = require("../KanbanAPI/KanbanAPI.js");

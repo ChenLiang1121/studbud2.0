@@ -2,6 +2,10 @@
 .app-container {
   background-color: rgba(152, 215, 228, 0.6);
   padding-left: 50px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #F3F4F6;
 }
 
 .page-container {
@@ -55,7 +59,6 @@ nav.vertical .nav-links .nav-item a {
 h1 {
   margin-top: 150px;
   font-size: 60px;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: rgb(44, 43, 43);
 }
@@ -63,7 +66,6 @@ h1 {
 p {
   margin-top: 100px;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   color: rgb(44, 43, 43);
 }
 /*# sourceMappingURL=index.b2a7a68e.css.map */

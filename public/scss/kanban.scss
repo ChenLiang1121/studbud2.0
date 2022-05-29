@@ -3,6 +3,9 @@
 
 .app-container {
     background-color: rgba(152, 215, 228, 0.6);
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* All pages shared the same style of nav bar */
@@ -52,7 +55,6 @@ nav.vertical {
 
 #title {
     font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color:rgb(44, 43, 43);
     margin:auto;
@@ -64,7 +66,6 @@ nav.vertical {
 
 #subtitle {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     color:rgb(44, 43, 43);
     margin:auto;
 	width: 1050px;
@@ -72,7 +73,7 @@ nav.vertical {
 
 }
 
-/* kanban column title, input box, add button style */
+/* kanban column title, input box, add button style, reference: "https://github.com/dcode-youtube/kanban-board" */
 
 .kanban {
 	margin:auto;
@@ -83,12 +84,8 @@ nav.vertical {
 	display: flex;
 	padding: 30px;
 	width: 1000px;
-	background: #e7e6e6f6;
+	background: #e2e2e4;
 	border-radius: 5px;
-}
-
-.kanban * {
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 .kanban__column {
@@ -110,7 +107,7 @@ nav.vertical {
 .kanban__item-input {
 	padding: 10px 15px;
 	box-sizing: border-box;
-	background: white;
+	background: rgb(247, 245, 245);
 	border-radius: 5px;
 	cursor: pointer;
 }
@@ -140,7 +137,6 @@ nav.vertical {
 
 #instruction {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     color:rgb(44, 43, 43);
     margin:auto;
     margin-top: 20px;

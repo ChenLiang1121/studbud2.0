@@ -1,5 +1,7 @@
 
-<!-- Got inspiration and help from "https://youtu.be/PIiMSMz7KzM" for html, scss, and js parts, about how to make a Kanban board on website --> 
+<!-- Got inspiration and help from "https://youtu.be/PIiMSMz7KzM", "https://codepen.io/dcode-software/pen/XWgyOpg",
+  "https://youtu.be/49f1cjZWRJA", "https://github.com/TylerPottsDev/yt-js-stopwatch/blob/main/main.js"
+  for html, scss, and js parts, about how to make timers on website --> 
 
 <!DOCTYPE html>
 
@@ -7,11 +9,11 @@
 
 <head>
 
-  <title>repl.it</title>
-
   <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Timer web tool</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <meta name="description" content="">
 
@@ -38,19 +40,35 @@
   
     </nav>
   
-    <!-- Page contents, title and subtitle introduce the tool, two types of timer, both counting down and counting upwards for different situations and needs -->
+    <!-- Page contents, title and subtitle introduce the tool, two types of timer, 
+      both counting down and counting upwards for different situations and needs -->
   
+    <!-- The Pomodoro timer -->
+
     <div id="title"> Pomodoro timer </div>
   
-    <div id="subtitle"> (set the section time and countdown) </div>
+    <div id="subtitle"> (set the section time to countdown) </div>
   
     <div class="timer"></div>
+
+    
+    <!-- The Stopwatch timer -->
 
     <div id="title"> Stopwatch timer </div>
   
     <div id="subtitle"> (counting upwards timer to track time) </div>
+    
+    <div class="watch">
 
-
+      <div class="time">
+        00:00:00
+      </div>
+      <div class="controls">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
 
     <script src="/timer.69c4fe6f.js" defer=""></script>
   

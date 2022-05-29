@@ -1,1 +1,100 @@
-<script src="/dictionary.7c4ba48b.js"></script>
+<!-- Got inspiration and help from "https://www.youtube.com/watch?v=uqgCF3JIHkA&t=900s" and 
+  "https://www.codingnepalweb.com/build-dictionary-app-html-javascript/" 
+  for html, scss, and js parts, about how to make a dictionary on website --> 
+
+  <!DOCTYPE html>
+
+  <html lang="en">
+  
+  <head>
+  
+    <meta charset="UTF-8">
+  
+    <title>Dictionary web tool</title>
+  
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
+    <meta name="description" content="">
+  
+    <link rel="stylesheet" href="/dictionary.16be4c96.css">
+  
+    <!-- CDN Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  </head>
+  
+  <body class="app-container">
+  
+      <!-- The navigation bar on all pages -->
+    
+      <nav class="vertical nav bar">
+    
+        <ul class="nav-links">
+        <li class="nav-icon"><a href="/index.html" class="active">Home</a></li>
+        <li class="nav-icon"><a href="/tasklist.html">Tasks</a></li>
+        <li class="nav-icon"><a href="/kanban.html">Kanban board</a></li>
+        <li class="nav-icon"><a href="/timer.html">Timer</a></li>
+        <li class="nav-icon"><a href="/dictionary.html">Dictionary</a></li>
+        </ul>
+    
+      </nav>
+    
+      <!-- Page contents, title and subtitle introduce the tool, a dictionary app for 
+      word's meaning and synonyms searching -->
+    
+      <div id="title"> Dictionary </div>
+    
+      <div id="subtitle"> (search words for writing support) </div>
+  
+      <!-- Dictionary app -->
+
+      <div class="wrapper">
+
+        <!-- Searching place -->
+
+        <div class="search">
+          <input type="text" placeholder="Search a word" required="" spellcheck="false">
+          <i class="fas fa-search"></i>
+          <span class="material-icons">close</span>
+        </div>
+        <p class="info-text">Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
+        <ul>
+          <li class="word">
+            <div class="details">
+              <p>__</p>
+              <span>_ _</span>
+            </div>
+            <i class="fas fa-volume-up"></i>
+          </li>
+
+          <!-- Three relative outcomes -->
+
+          <div class="content">
+            <li class="meaning">
+              <div class="details">
+                <p>Meaning</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="example">
+              <div class="details">
+                <p>Example</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="synonyms">
+              <div class="details">
+                <p>Synonyms</p>
+                <span>___</span>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+  
+      <script src="/dictionary.479c6079.js" defer=""></script>
+    
+    </body>
+    </html>
+  

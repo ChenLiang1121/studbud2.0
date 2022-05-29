@@ -1,3 +1,6 @@
+
+// Reference: "https://github.com/dcode-youtube/kanban-board"
+
 import DropZone from "./DropZone.js";
 import KanbanAPI from "../KanbanAPI/KanbanAPI.js";
 

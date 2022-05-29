@@ -1,5 +1,5 @@
 
-// Be able to be imported into other files
+// Be able to be imported into other files, reference: "https://github.com/dcode-youtube/kanban-board"
 
 export default class KanbanAPI {
 

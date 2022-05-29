@@ -1,3 +1,6 @@
+
+// Reference: "https://github.com/dcode-youtube/kanban-board"
+
 import KanbanAPI from "../KanbanAPI/KanbanAPI.js";
 
 // Set the drag interaction of input dropzone, keep the input same

@@ -1,3 +1,6 @@
+
+// Reference: "https://github.com/dcode-youtube/kanban-board"
+
 import Column from "./Column.js";
 
 // Set the column elements as kanban board

@@ -455,7 +455,8 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"fQa2z":[function(require,module,exports) {
-//Basic form DOM elements
+// Reference: "https://replit.com/@CHENHENG/Modular-WebApp-Demo#server.js"
+// Basic form DOM elements
 const form = document.getElementById("taskform");
 const button = document.querySelector("#taskform > button");
 var taskInput = document.getElementById("taskInput");

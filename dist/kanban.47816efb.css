@@ -1,6 +1,9 @@
 /* The whole page shared element */
 .app-container {
   background-color: rgba(152, 215, 228, 0.6);
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* All pages shared the same style of nav bar */
@@ -46,7 +49,6 @@ nav.vertical .nav-links .nav-item a {
 /* title and subtitle element style */
 #title {
   font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: rgb(44, 43, 43);
   margin: auto;
@@ -58,29 +60,24 @@ nav.vertical .nav-links .nav-item a {
 
 #subtitle {
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   color: rgb(44, 43, 43);
   margin: auto;
   width: 1050px;
   display: flex;
 }
 
-/* kanban column title, input box, add button style */
+/* kanban column title, input box, add button style, reference: "https://github.com/dcode-youtube/kanban-board" */
 .kanban {
   margin: auto;
   margin-top: 50px;
   display: flex;
   padding: 30px;
   width: 1000px;
-  background: rgba(231, 230, 230, 0.9647058824);
+  background: #e2e2e4;
   border-radius: 5px;
 }
 .kanban#home {
   text-align: center;
-}
-
-.kanban * {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .kanban__column {
@@ -102,7 +99,7 @@ nav.vertical .nav-links .nav-item a {
 .kanban__item-input {
   padding: 10px 15px;
   box-sizing: border-box;
-  background: white;
+  background: rgb(247, 245, 245);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -131,7 +128,6 @@ nav.vertical .nav-links .nav-item a {
 /* instruction style */
 #instruction {
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   color: rgb(44, 43, 43);
   margin: auto;
   margin-top: 20px;
