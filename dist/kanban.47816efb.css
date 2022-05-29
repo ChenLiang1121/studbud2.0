@@ -136,4 +136,12 @@ nav.vertical .nav-links .nav-item a {
   display: flex;
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+  .app-container {
+    size: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /*# sourceMappingURL=kanban.47816efb.css.map */

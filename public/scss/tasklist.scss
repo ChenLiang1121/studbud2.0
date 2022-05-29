@@ -107,3 +107,13 @@ nav.vertical {
 #tasklist {
     grid-area: tasklist;
 }
+
+// Media Queries
+
+@media only screen and (max-width: 768px) {
+    .app-container {
+      size: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

@@ -4,15 +4,18 @@
 
 <head>
 
-  <title>repl.it</title>
+  <title>WritingPal Homepage</title>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
   <meta charset="UTF-8" />
-
+  <meta name="description" content="Free supportive writing web application" />
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Chen Liang">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <meta name="description" content="" />
-
   <link rel="stylesheet" href="scss/main.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 
 </head>
 
@@ -48,6 +51,39 @@
       <a href="dictionary.html"> "Dictionary"</a> is for searching word's meaning and synonyms for writing. <br><br>
     </p>
 
+  <h2> Music Player </h2>
+  <!-- Music player reference: "https://www.youtube.com/watch?v=QTHRWGn_sJw", 
+    "https://github.com/bradtraversy/vanillawebprojects/blob/master/music-player/index.html" -->
+
+  <div class="music-container" id="music-container">
+    <div class="music-info">
+      <h4 id="title"></h4>
+
+      <!-- Music progress bar -->
+
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+      </div>
+    </div>
+
+    <!-- Default one -->
+
+    <audio src="/music/ukulele.mp3" id="audio"></audio>
+
+    <!-- Player buttons -->
+
+    <div class="navigation">
+      <button id="prev" class="action-btn">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button id="play" class="action-btn action-btn-big">
+        <i class="fas fa-play"></i>
+      </button>
+      <button id="next" class="action-btn">
+        <i class="fas fa-forward"></i>
+      </button>
+    </div>
+  </div>
   </div>
 
   <script type="module" src="script.js"></script>

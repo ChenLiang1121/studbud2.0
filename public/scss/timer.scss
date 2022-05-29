@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(152, 215, 228, 0.6);
-  color: #F3F4F6;
+  color: #111827;
 }
 
 /* All pages shared the same style of nav bar */
@@ -80,7 +80,7 @@ nav.vertical {
     padding: 24px 32px;
     margin: 50px auto 40px 740px;
     border-radius: 40px;
-    background: #111827;
+    background: #F3F4F6;
   }
   
   .timer__part {
@@ -111,7 +111,7 @@ nav.vertical {
 
   .watch {
     text-align: center;
-    background-color: #111827;
+    background-color: #F3F4F6;
     max-width: 450px;
     margin: 4rem auto;
     padding: 1rem 2rem;
@@ -154,4 +154,14 @@ nav.vertical {
   
   .controls button:active {
     background-color: #1F2937;
+  }
+
+  // Media Queries
+
+  @media only screen and (max-width: 768px) {
+    .app-container {
+      size: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
